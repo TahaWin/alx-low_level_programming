@@ -1,3 +1,9 @@
+/*
+ * File: 0-putchar.c
+ * Auth: Taha Ahmed Khater
+ *
+ */
+
 #include "main.h"
 
  /**
