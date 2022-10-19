@@ -1,17 +1,18 @@
 /*
- * File: int add(int b, int a);
- * Auth: Taha Ahmed Khater
- */
+ *  * File: 10-add.c
+ *   * Auth: Taha Ahmed Khater
+ *    */
 
 #include "main.h"
 
 /**
- * function that adds two integers and returns the result.
+ * add - Adds two integers.
+ * @num1: The first integer to be added.
+ * @num2: The second integer to be added.
  *
+ * Return: The result of the addition.
  */
-int add(int a, int b);
+int add(int num1, int num2)
 {
-	int a, b, c;
-	c = a + b;
-	_putchar(c)
+	return (num1 + num2);
 }
