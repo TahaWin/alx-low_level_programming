@@ -1,7 +1,7 @@
 /*
- *  * File: 10-add.c
- *   * Auth: Taha Ahmed Khater
- *    */
+ * File: 10-add.c
+ * Auth: Taha Ahmed Khater
+ */
 
 #include "main.h"
 
