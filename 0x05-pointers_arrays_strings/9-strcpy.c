@@ -1,20 +1,33 @@
-#include "holberton.h"
-#include "2-strlen.c"
+#include "main.h"
 /**
- * _strcpy - main function to copy
+ * _strcpy - copie the string
+ * @dest: array that returns
+ * @src: the pointer that receive the string
  *
- * @dest: destination to copy
- * @src: src
- *
- * Return: a character value
+ * Return: the parameter dest.
  */
 char *_strcpy(char *dest, char *src)
 {
+	int n = 0;
 	int i;
 
-	for (i = 0; i <= _strlen(src); i++)
+	while (src[n] != '\0')
+	{
+		n++;
+	}
+
+	i = 0;
+	while (i < n && src[i] != '\0')
 	{
 		dest[i] = src[i];
+		i++;
+	}
+
+	i = i;
+	while (i <= n)
+	{
+		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }
