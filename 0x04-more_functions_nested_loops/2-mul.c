@@ -1,22 +1,15 @@
 #include "main.h"
 /**
- * print_number - prints an integer
- * @n:.input integer parameter
+ * mul - multiplies two integers
+ * @a: multiplying
+ * @b: multiplier
  *
- *
+ * Return: the result of mutiplication
  */
-void print_number(int n)
+int mul(int a, int b)
 {
-	unsigned int i = n;
+	int result;
 
-	if (n < 0)
-	{
-		_putchar(45);
-		i = -i;
-	}
-	if (i / 10)
-	{
-		print_number(i / 10);
-	}
-	_putchar(i % 10 + '0');
+	result = a * b;
+	return (result);
 }
