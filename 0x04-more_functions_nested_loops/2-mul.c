@@ -1,12 +1,22 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- *  mul - a function that multiplies two integers
- * @a: first input
- * @b: second input
- * Return: multiplication result of the 2 inputs
+ * print_number - prints an integer
+ * @n:.input integer parameter
+ *
+ *
  */
-int mul(int a, int b)
+void print_number(int n)
 {
-	return (a * b);
+	unsigned int i = n;
+
+	if (n < 0)
+	{
+		_putchar(45);
+		i = -i;
+	}
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+	_putchar(i % 10 + '0');
 }
