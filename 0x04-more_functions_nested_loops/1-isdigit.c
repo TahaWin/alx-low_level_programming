@@ -1,31 +1,18 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * print_triangle - a function that prints a triangle
- * @size: size of the triangle
- * Return: triangle of '#'s
+ * _isdigit - checks for a digit
+ * @c: the parameter to print
+ *
+ * Return: 1 or 0
  */
-void print_triangle(int size)
+int _isdigit(int c)
 {
-	int sp, ro, tr;
-
-	if (size <= 0)
+	if (c >= 48 && c <= 57)
 	{
-		_putchar('\n');
+		return (1);
 	}
 	else
 	{
-		for (ro = 0; ro <= (size - 1); ro++)
-		{
-			for (sp = 0; sp < (size - 1) - ro; sp++)
-			{
-				_putchar(' ');
-			}
-			for (tr = 0; tr <= ro; tr++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
+		return (0);
 	}
 }
